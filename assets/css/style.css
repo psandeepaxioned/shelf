@@ -105,12 +105,61 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 86%; 
+  width: 93.33%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+nav {
+  background-color: #787775;
+  opacity: 0.4;
+}
+header .wrapper { 
+  width: 90.66%; 
+  padding: 2% 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #eae5e7;
+}
+
+header {
+  position: absolute;
+  bottom: 13.5%;
+  width: 100%;
+  z-index: 1;
+}
+
+.bookstore h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #697173;
+}
+.bookstore p {
+  padding-top: 1.5%;
+  font-size: 19px;
+  line-height: 27px;
+  color: #5a6987;
+}
+
+ul.bookstore-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookstore-images li {
+  flex-basis: 25%;
+  padding: 1%;
+}
+
 
 
 
@@ -124,7 +173,25 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-
+.banner .wrapper {
+  width: 100%;
+  border-bottom: 10px solid #225b87;
+  
+}
+.banner h1 {
+  font-size: 44px;
+  position: absolute;
+  top: 11.5%;
+  left: 5.5%;
+  text-transform: uppercase;
+}
+.logo-subtitle span {
+  text-transform: capitalize;
+  font-size: 20px;
+  position: absolute;
+  top: 22%;
+  left: 5.5%;
+}
 
 
 
