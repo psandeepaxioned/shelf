@@ -286,7 +286,16 @@ section.need-help { padding-bottom: 5%; }
 /*=================================
   footer styling starts here
 =================================*/
+footer {
+  background-color: #333333;
+  color: #faf5f0;
+}
 
+footer p {
+  padding: 1.5% 0;
+  font-size: 18px;
+  text-align: center;
+}
 
 
 /*=================================
