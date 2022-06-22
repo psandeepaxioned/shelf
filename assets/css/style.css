@@ -127,18 +127,23 @@ header ul {
 }
 
 header a {
-  text-transform: capitalize;
-  font-size: 20px;
   color: #eae5e7;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 header {
-  position: absolute;
-  bottom: 30.7%;
   width: 100%;
+  position: absolute;
   z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30.7%;
+  background-color: #787775;
+  opacity: 0.4;
 }
 
+nav ul li.active a { color: #5b96d9; }
 header a:hover { color: #5b96d9; }
 
 /*=================================
@@ -148,119 +153,7 @@ header a:hover { color: #5b96d9; }
 /*=================================
   main styling starts here
 =================================*/
-/* banner section */
 
-.banner .wrapper {
-  width: 100%;
-  border-bottom: 10px solid #225b87;
-}
-
-.banner h1 {
-  font-size: 44px;
-  position: absolute;
-  top: 11.5%;
-  left: 5.5%;
-  text-transform: uppercase;
-}
-
-.logo-subtitle span {
-  text-transform: capitalize;
-  font-size: 20px;
-  position: absolute;
-  top: 22%;
-  left: 5.5%;
-}
-
-/* banner ended */
-/* bookstore section */
-
-.bookstore h3 {
-  font-size: 30px;
-  color: #697173;
-}
-
-.bookstore p {
-  padding: 2% 0;
-  font-size: 19px;
-  line-height: 25px;
-  color: #5f6567;
-}
-
-ul.bookstore-images {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2.5%
-}
-
-.bookstore-images li { flex-basis: 23.5%; }
-
-.bookstore-images span {
-  color: #657074;
-  display: block;
-  text-align: center;
-  padding: 6% 0;
-}
-
-.bookstore .wrapper { padding: 6% 0 2% 0; }
-/* page-button */
-
-.page-buttons ul {
-  display: flex;
-  justify-content: center;
-  padding-right: 3%;
-}
-
-.page-buttons li { padding: 2%; }
-
-.page-buttons a {
-  border: 1px solid;
-  padding: 15px 180%;
-  color: #7f7d78;
-  background-color: #d5d5d5;
-}
-
-.page-buttons a:hover{
-  color: #c4d8d9;
-  background-color: #225b86
-}
-
-/* page-button ended */
-/* bookstore ended */
-
-/* need-help */
-
-section.need-help .wrapper {
-  display: flex;
-  justify-content: space-between;
-  background-color: #29619e;
-}
-
-.needhelp-content {
-  color: #fafefb;
-  flex-basis: 73%;
-  padding: 4% 0;
-}
-
-.needhelp-content h4 {
-  text-transform: capitalize;
-  font-size: 30px;
-}
-
-.needhelp-content p {
-  font-size: 19px;
-  line-height: 27px;
-  padding: 1.5% 15% 1.5% 0;
-}
-
-.need-help img {
-  padding: 42% 100%;
-}
-
-section.need-help {
-  padding-bottom: 5%;
-}
-
-/* help-need ended */
 /*=================================
   main styling ends here
 =================================*/
@@ -269,16 +162,7 @@ section.need-help {
   footer styling starts here
 =================================*/
 
-footer .wrapper {
-  background-color: #333333;
-  color: #faf5f0;
-}
 
-footer p {
-  text-align: center;
-  font-size: 18px;
-  padding: 1.5% 0;
-}
 
 /*=================================
   footer styling ends here
