@@ -153,6 +153,34 @@ header a:hover { color: #5b96d9; }
 /*=================================
   main styling starts here
 =================================*/
+/* banner section */
+
+.banner .wrapper {
+  width: 100%;
+  border-bottom: 10px solid #225b87;
+}
+.banner { position: relative;}
+
+.banner h1 {
+  position: absolute;
+  top: 11.5%;
+  left: 5.5%;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.banner a { color: #fff; }
+
+.logo-subtitle {
+  position: absolute;
+  top: 28%;
+  left: 5.5%;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+/* banner ended */
 
 /*=================================
   main styling ends here
