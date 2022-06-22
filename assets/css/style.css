@@ -181,6 +181,66 @@ header a:hover { color: #5b96d9; }
 }
 
 /* banner ended */
+/* bookstore section */
+
+.bookstore h3 {
+  color: #697173;
+  font-size: 30px;
+}
+
+.bookstore p {
+  padding: 2% 0;
+  color: #5f6567;
+  font-size: 19px;
+  line-height: 25px;  
+}
+
+ul.bookstore-images {
+  padding-top: 2.5%;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.bookstore-images li { flex-basis: 23.5%; }
+
+.bookstore-images span {
+  padding: 6% 0;
+  display: block;
+  color: #657074;
+  text-align: center;
+  
+}
+
+.bookstore .wrapper { padding: 6% 0 2% 0; }
+/* page-button */
+
+.page-buttons ul {
+  padding-right: 3%;
+  display: flex;
+  justify-content: center; 
+}
+
+.page-buttons li { padding: 2%; }
+
+.page-buttons a {
+  padding: 15px 180%;
+  border: 1px solid;
+  background-color: #d5d5d5;
+  color: #7f7d78;
+}
+
+.page-buttons a:active {
+  background-color: #225b86;
+  color: #c4d8d9; 
+}
+
+.page-buttons a:hover {
+  background-color: #225b86;
+  color: #c4d8d9;
+}
+
+/* page-button ended */
+/* bookstore ended */
 
 /*=================================
   main styling ends here
