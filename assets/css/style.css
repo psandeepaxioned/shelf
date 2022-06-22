@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,23 +98,38 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
-button { cursor: pointer; }
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
 
 strong {
   font-weight: bold;
@@ -48,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -64,8 +155,12 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -76,8 +171,12 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
@@ -85,9 +184,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -95,33 +194,42 @@ li {
   list-style-type: none;
 }
 /* Common styling */
-.grey { color: #666; }
-.cap { text-transform: capitalize; }
-.up { text-transform: uppercase; }
-.center { text-align: center; }
-.bold { font-weight: bold; }
-.transition { transition: 1s all ease; }
+.grey {
+  color: #666;
+}
+.cap {
+  text-transform: capitalize;
+}
+.up {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.transition {
+  transition: 1s all ease;
+}
 
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 93.33%; 
+  width: 93.33%;
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
-nav {
-  background-color: #787775;
-  opacity: 0.4;
-}
 
-header .wrapper { 
-  width: 90.66%; 
+header .wrapper {
+  width: 90.66%;
   padding: 2% 0;
 }
 
 header ul {
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -136,19 +244,35 @@ header {
   width: 100%;
   position: absolute;
   z-index: 1;
+  top: 57.5%;
   left: 50%;
   transform: translate(-50%);
-  bottom: 30.7%;
-  background-color: #787775;
-  opacity: 0.4;
+  background-color:rgba(119,120,127,0.4)
 }
 
 nav ul li.active a { color: #5b96d9; }
-header a:hover { color: #5b96d9; }
+header a:hover {  color: #5b96d9; }
+
+header label {
+  position: absolute;
+  top: 0%;
+  right: 4%;
+  margin: 0 5% 0 0;
+  font-size: 25px;
+  display: none;
+  line-height: 75px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0%;
+  right: 4%;
+  display: none;
+}
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
@@ -159,7 +283,7 @@ header a:hover { color: #5b96d9; }
   width: 100%;
   border-bottom: 10px solid #225b87;
 }
-.banner { position: relative;}
+.banner {  position: relative; }
 
 .banner h1 {
   position: absolute;
@@ -169,7 +293,7 @@ header a:hover { color: #5b96d9; }
   text-transform: uppercase;
 }
 
-.banner a { color: #fff; }
+.banner a {  color: #fff; }
 
 .logo-subtitle {
   position: absolute;
@@ -192,35 +316,34 @@ header a:hover { color: #5b96d9; }
   padding: 2% 0;
   color: #5f6567;
   font-size: 19px;
-  line-height: 25px;  
+  line-height: 25px;
 }
 
 ul.bookstore-images {
   padding-top: 2.5%;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
-.bookstore-images li { flex-basis: 23.5%; }
+.bookstore-images li {  flex-basis: 23.5%; }
 
 .bookstore-images span {
   padding: 6% 0;
   display: block;
   color: #657074;
   text-align: center;
-  
 }
 
-.bookstore .wrapper { padding: 6% 0 2% 0; }
+.bookstore .wrapper {  padding: 6% 0 2% 0; }
 /* page-button */
 
 .page-buttons ul {
   padding-right: 3%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.page-buttons li { padding: 2%; }
+.page-buttons li {  padding: 2%; }
 
 .page-buttons a {
   padding: 15px 180%;
@@ -229,9 +352,9 @@ ul.bookstore-images {
   color: #7f7d78;
 }
 
-.page-buttons a:active {
+.page-buttons .active a {
   background-color: #225b86;
-  color: #c4d8d9; 
+  color: #c4d8d9;
 }
 
 .page-buttons a:hover {
@@ -258,7 +381,7 @@ section.need-help .wrapper {
 
 .needhelp-content h4 {
   font-size: 30px;
-  text-transform: capitalize;  
+  text-transform: capitalize;
 }
 
 .needhelp-content p {
@@ -267,8 +390,8 @@ section.need-help .wrapper {
   line-height: 27px;
 }
 
-.need-help img { padding: 42% 100%; }
-section.need-help { padding-bottom: 5%; }
+.need-help img {  padding: 42% 100%; }
+section.need-help {  padding-bottom: 5%; }
 
 .live-chat a {
   padding: 1.5% 3.5%;
@@ -297,15 +420,191 @@ footer p {
   text-align: center;
 }
 
-
 /*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
+
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1024px) {
+  header {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .need-help img {  padding: 38% 51%;  }
+  .page-buttons li {  padding: 2% 2.5%;  }
+}
+/* responsive-css for 995px */
 @media only screen and (max-width: 995px) {
+  header {
+    position: absolute;
+    top: 45.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* responsive-css for 768px */
+@media only screen and (max-width: 768px) {
+  header {
+    position: absolute;
+    top: 43.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
+  .banner h1 {  font-size: 35px;  }
+  .logo-subtitle {  font-size: 17px;  }
+  .page-buttons li {  padding: 2% 3.5%;  }
+  .need-help img {  padding: 27% 30%;  }
+}
+/* responsive-css for 540px */
+@media only screen and (max-width: 540px) {
+  header .wrapper {  padding: 5% 0;  }
 
+  header label {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 75px;
+  }
 
-}  
+  header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner h1 {
+      font-size: 30px; 
+      position: absolute;
+      top: 20%;
+      left: 5%; 
+    }
+  .logo-subtitle {
+      font-size: 14px; 
+      position: absolute;
+      top: 36%;
+      left: 5%; 
+    }
+
+  header ul {
+    width: 100vh;
+    display: none;
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    background-color: #29619e;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    }
+
+  header a {
+    border-bottom: 1px solid #000;
+    display: block;
+    line-height: 25px;
+  }
+
+  .hamburger:checked + ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bookstore h3 {  font-size: 25px;  }
+
+  .bookstore p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  ul.bookstore-images {
+    padding: 2.5% 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .bookstore-images li {  flex-basis: 40%;  }
+
+  .page-buttons a {
+    padding: 10px 100%;
+    border: 1px solid;
+  }
+
+  .needhelp-content {  padding: 4% 0 4% 14%;  }
+  .needhelp-content h4 {  font-size: 20px;  }
+
+  .needhelp-content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  footer p {  font-size: 13px;  }
+}
+/* responsive-css for 480px  */
+@media only screen and (max-width: 480px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner h1 {  font-size: 25px;  }
+  .logo-subtitle {  font-size: 12px;  }
+}
+
+/* responsive-css for 320px */
+@media only screen and (max-width: 320px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header label {
+    display: block;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 50px;
+  }
+
+  header ul { top: 52px;  }
+
+  header a {
+    line-height: 15px;
+    font-size: 15px;
+  }
+
+  .banner h1 {  font-size: 18px; }
+  .logo-subtitle {  font-size: 9px; }
+  .bookstore h3 { font-size: 18px; }
+
+  .bookstore p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .bookstore-images li { flex-basis: 45%; }
+
+  .page-buttons a { 
+    padding: 6px 70%;
+    border: 1px solid;
+  }
+
+  .needhelp-content h4 {  font-size: 15px;  }
+
+  .needhelp-content p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .live-chat a {  font-size: 10px; }
+  footer p {  font-size: 8px; }
+}
