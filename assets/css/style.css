@@ -242,6 +242,43 @@ ul.bookstore-images {
 /* page-button ended */
 /* bookstore ended */
 
+/* need-help */
+
+section.need-help .wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #29619e;
+}
+
+.needhelp-content {
+  padding: 4% 0;
+  color: #fafefb;
+  flex-basis: 73%;
+}
+
+.needhelp-content h4 {
+  font-size: 30px;
+  text-transform: capitalize;  
+}
+
+.needhelp-content p {
+  padding: 1.5% 15% 1.5% 0;
+  font-size: 19px;
+  line-height: 27px;
+}
+
+.need-help img { padding: 42% 100%; }
+section.need-help { padding-bottom: 5%; }
+
+.live-chat a {
+  padding: 1.5% 3.5%;
+  border: 1px solid;
+  color: #fafefb;
+  text-transform: capitalize;
+}
+
+/* help-need ended */
+
 /*=================================
   main styling ends here
 =================================*/
